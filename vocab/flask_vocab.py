@@ -107,23 +107,12 @@ def check():
         matchdict["isword"] = True
         matches.append(text)
         flask.session["matches"] = matches
-    #elif text in matches:
-        #flask.flash("You already found {}".format(text))
-    #elif not matched:
-        #flask.flash("{} isn't in the list of words".format(text))
-    #elif not in_jumble:
-        #flask.flash(
-            #'"{}" can\'t be made from the letters {}'.format(text, jumble))
-    #else:
-        #app.logger.debug("This case shouldn't happen!")
-        #assert False  # Raises AssertionError
+    
 
     # Choose page:  Solved enough, or keep going?
     if len(matches) >= flask.session["target_count"]:
         matchdict["isenough"] = True
-       #return flask.redirect(flask.url_for("success"))
-    #else:
-       #return flask.redirect(flask.url_for("keep_going"))
+      
     return flask.jsonify(result=matchdict)
 
 ###############

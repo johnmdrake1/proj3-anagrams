@@ -18,3 +18,21 @@ current contents of the text box. When these keystrokes and contents match up wi
 the word is printed below as previously described. This way, no submit button needs to be used or anything such as an "enter"
 key pressed.
 
+DEPENDENCIES:
+Python 3
+Bash
+git
+
+INSTRUCTIONS FOR USE:
+1. git clone https://github.com/johnmdrake1/proj3-anagrams.git
+2. put credentials.ini file in vocab directory(within main project directory)
+3. cd proj3-anagrams
+4. make install
+5. make start
+6. Open browser/client and go to localhost:8000
+7. Enter 4 correct words in text box. No "enter button" needed
+8. Once 4 correct words have been entered, page redirects to success screen
+9. Link on success screen can be clicked to play again
+10. make stop to stop server 
+11. kill | grep python
+
